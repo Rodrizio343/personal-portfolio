@@ -5,7 +5,7 @@ const morgan = require("morgan");
 const cors = require("cors");
 const app = express();
 const { PORT } = require("./config/config");
-console.log(PORT)
+const userRouter = require("./routers/userRouter");
 
 // middlewares
 app.use(bodyParser.json());
@@ -14,6 +14,9 @@ app.use(fileUpload());
 app.use(morgan("dev"));
 app.use(cors());
 app.use(express.static(__dirname + "/uploads"));
+
+// routes middlewares
+userRouter(app);
 
 app.listen(PORT, () => {
   console.log(`The server started on PORT: ${PORT}`);
