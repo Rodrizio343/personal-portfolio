@@ -9,6 +9,10 @@ const { PORT } = require("./config/config");
 const authRouter = require("./routers/authRouter");
 const userRouter = require("./routers/userRouter");
 const projectsRouter = require("./routers/projectsRouter.js");
+const {
+  clientErrorHandler,
+  errorHandler,
+} = require("./middlewares/errorsHandler");
 
 // middlewares
 app.use(bodyParser.json());
@@ -22,6 +26,10 @@ app.use(express.static(__dirname + "/uploads"));
 authRouter(app);
 userRouter(app);
 projectsRouter(app);
+
+// errors
+app.use(clientErrorHandler);
+app.use(errorHandler);
 
 app.listen(PORT, () => {
   console.log(`The server started on PORT: ${PORT}`);
