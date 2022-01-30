@@ -4,7 +4,8 @@
   "description": "My personal portfolio to show my projects",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index"
+    "dev": "nodemon index",
+    "start": "node index"
   },
   "keywords": [
     "server",
