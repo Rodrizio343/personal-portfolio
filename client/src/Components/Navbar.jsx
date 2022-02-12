@@ -7,10 +7,12 @@ import {
 import navlinks from "../Config/navlinks";
 import css from "../Styles/App.module.scss";
 import cs from "classnames";
+import { useUserContext } from "../Context/UserContext";
 
 function Navbar() {
   const [isOpen, setOpen] = useState(false);
   const toggleNav = () => setOpen((c) => !c);
+  const { deleteSession, user } = useUserContext();
 
   return (
     <>
@@ -22,6 +24,11 @@ function Navbar() {
             {text}
           </NavLink>
         ))}
+        {user._id && (
+          <NavLink to="/" onClick={deleteSession}>
+            Salir
+          </NavLink>
+        )}
       </nav>
     </>
   );

@@ -29,13 +29,14 @@ export default function Login() {
         </Form.Group>
 
         <Form.Group controlId="password">
-          <Form.Label className="text-muted">Contraseña</Form.Label>
+          <Form.Label className="text-muted mt-2">Contraseña</Form.Label>
           <Form.Control type="password" name="password" required />
         </Form.Group>
-
-        <Button variant="success" type="submit"  disabled={isLoading} block>
-          {isLoading ? "Comprobando..." : "Iniciar sesión"}
-        </Button>        
+        <div className='d-grid gap-2 mt-3'>
+          <Button variant="success" type="submit" size='lg' disabled={isLoading} >
+            {isLoading ? "Comprobando..." : "Iniciar sesión"}
+          </Button>        
+        </div>
       </Form>
     </>
   )
