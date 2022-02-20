@@ -15,7 +15,17 @@ const WEB_TECHNOLOGIES = [
   "SASS",
   "ExpressJS",
   "MongoDB + Mongoose",
-  "PHP"
+  "PHP",
+  "Lumen",
+  "GraphQL",
 ];
 
-export { API_URL, LOGIN, USER_INFO, PROJECTS, WEB_TECHNOLOGIES };
+// email config
+const EMAILJS = {
+  SERVICE_ID: process.env.REACT_APP_SERVICE_ID,
+  TEMPLATE_ID_FOR_USER: process.env.REACT_APP_TEMPLATE_ID_FOR_USER,
+  TEMPLATE_ID_FOR_ME: process.env.REACT_APP_TEMPLATE_ID_FOR_ME,
+  USER_ID: process.env.REACT_APP_USER_ID,
+};
+
+export { API_URL, LOGIN, USER_INFO, PROJECTS, WEB_TECHNOLOGIES, EMAILJS };
