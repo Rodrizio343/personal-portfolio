@@ -30,7 +30,7 @@ export async function sendForm(data) {
       EMAILJS.USER_ID
     );
     
-    const emailForUser = await emailjs.send(
+    await emailjs.send(
       EMAILJS.SERVICE_ID,
       EMAILJS.TEMPLATE_ID_FOR_USER,
       data,
