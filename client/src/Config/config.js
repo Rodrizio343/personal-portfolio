@@ -18,6 +18,8 @@ const WEB_TECHNOLOGIES = [
   "PHP",
   "Lumen",
   "GraphQL",
+  "TypeScript",
+  "StyledComponents"
 ];
 
 // email config
