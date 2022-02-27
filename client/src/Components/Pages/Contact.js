@@ -18,7 +18,7 @@ function Contact() {
 
   return (
     <>
-      <Title title="Contacto" />
+      <Title title="Contact" />
       <Form
         style={{ width: "100%", maxWidth: "650px" }}
         onSubmit={handleSubmit}

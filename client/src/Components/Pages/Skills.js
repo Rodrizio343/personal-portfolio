@@ -16,14 +16,14 @@ import Title from "../Titlte";
 export default function Skills() {
   return (
     <>
-      <Title title="Habilidades" />
-      <h1 className="mt-5 mb-4 font-weight-bold">Habilidades</h1>
+      <Title title="Skills" />
+      <h1 className="mt-5 mb-4 font-weight-bold">Skills</h1>
       <Row className="align-items-center">
         <Col lg={4}>
           <Skill
             title="React"
             image={react}
-            desc="Librería para desarrollar interfaces gráficas orientadas a pagínas SPA, de forma interactiva y dinamica."
+            desc="Lubrary for building user interfaces that can be used in the development of SPA, interactive and dynamically."
           />
         </Col>
 
@@ -31,7 +31,7 @@ export default function Skills() {
           <Skill
             title="Next JS"
             image={nextjs}
-            desc="Framework de React para la creación de aplicaciones web con server side rendering y páginas estáticas."
+            desc="React framework for building web applications with server-side rendering and static pages."
           />
         </Col>
 
@@ -39,7 +39,7 @@ export default function Skills() {
           <Skill
             title="Node"
             image={node}
-            desc="Entorno de javascript multiplataforma enfocado a realizar aplicaciones de diversas índoles."
+            desc="A cross-platform JavaScript runtime environment, focused to create diferent kinds of applications."
           />
         </Col>
 
@@ -47,7 +47,7 @@ export default function Skills() {
           <Skill
             title="Express"
             image={express}
-            desc="Librería enfocada a facilitar la creación de infraestructuras backend a través de node js."
+            desc="Framerowk for building backen applications and APIs with Node JS"
           />
         </Col>
 
@@ -55,7 +55,7 @@ export default function Skills() {
           <Skill
             title="MongoDB"
             image={mongodb}
-            desc="Base de datos orientado a documentos, permite almacenar grandes cantidades de información a través de documentos o archivos en BJSON."
+            desc="Cross-platform document-oriented database to store information as documents/BJSON files."
           />
         </Col>
 
@@ -63,7 +63,7 @@ export default function Skills() {
           <Skill
             title="GraphQL"
             image={graphql}
-            desc="Lenguaje de consulta y manipulación de datos para APIs, y un entorno de ejecución para realizar consultas con datos existentes."
+            desc="Data query and manipulation language for APIs, and a runtime for fulfilling queries with existing data."
           />
         </Col>
 
@@ -71,7 +71,7 @@ export default function Skills() {
           <Skill
             title="Lumen"
             image={lumen}
-            desc="Micro-framework de PHP para el desarrollo aplicaciones web, API's y microservicios."
+            desc="PHP's micro-framework for building web applications, APIs and microservices."
           />
         </Col>
 
@@ -79,7 +79,7 @@ export default function Skills() {
           <Skill
             title="SASS"
             image={sass}
-            desc="Es un lenguaje de estilos para desarrollar de una forma más fácil, flexible y de forma más programática CSS."
+            desc="Preposcessor scripting language for developing CSS more easy, flexible and in a programmatic way."
           />
         </Col>
 
@@ -87,7 +87,7 @@ export default function Skills() {
           <Skill
             title="CSS"
             image={css}
-            desc="Lenguaje de estilos en cascadas, permite añadir estilos y maquetar a las páginas web, se complemente con SASS."
+            desc="Style sheet language used to describe how HTML documents shoruld be displayed, adding styles. It is complemtary with SASS."
           />
         </Col>
 
@@ -95,7 +95,7 @@ export default function Skills() {
           <Skill
             title="HTML"
             image={html}
-            desc="Lenguaje de etiquetas, permite realizar la estructura o esqueleto de una página web a través de etiquetas para cada elemento de la misma."
+            desc="Markup language for building the basic structure of web pages in colaboration with CSS and JavaScript"
           />
         </Col>
       </Row>

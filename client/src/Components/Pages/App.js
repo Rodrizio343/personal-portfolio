@@ -8,17 +8,14 @@ import Title from "../Titlte";
 export default function Home() {
   return (
     <Row className="align-items-center app">
-      <Title title="Inicio" />
+      <Title title="Home" />
       <Col md={12} lg={6}>
         <h1 className="mb-4 font-weight-bold text-lg-left">
           Rodrigo E. Martínez
         </h1>
         <p className="">
-          Desarrollador web junior en
-          <TextMagic text="ReactJS" />, <TextMagic text="NodeJS" /> y
-          <TextMagic text="SASS" /> , en constante estudio y crecimiento
-          integral en el ámbito laboral. Dispuesto a trabajar en ambientes
-          grupales donde el trabajo en grupo y la comunicación es crucial.
+          I'm a web developer on
+          <TextMagic text="ReactJS" />, <TextMagic text="ExpressJS" /> and <TextMagic text="Lumen" />, in constant study and integral growth in the laboral scene. <br /> I'm ready to work on groupal projects, where colaborative work and comunication are crucial.
         </p>
 
         {/* <blockquote>

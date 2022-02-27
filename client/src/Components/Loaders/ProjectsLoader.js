@@ -1,4 +1,5 @@
 import Skeleton, { SkeletonTheme } from "react-loading-skeleton";
+import 'react-loading-skeleton/dist/skeleton.css'
 import Col from "react-bootstrap/Col";
 const items = Array(6).fill(null);
 
@@ -13,11 +14,16 @@ function ProjectLoader() {
       <SkeletonTheme color="#D2D2D2">
         <div className="w-100 skeleton-loader-project">
           <Skeleton height="140px" width="100%" />
+          {/* <Skeleton
+              height="100%"
+              containerClassName="avatar-skeleton"
+          /> */}
         </div>
         <div className="p-3">
           <Skeleton height="10px" width="140px" />
           <Skeleton height="10px" />
           <Skeleton height="10px" />
+          {/* <Skeleton count={3} /> */}
         </div>
       </SkeletonTheme>
     </div>

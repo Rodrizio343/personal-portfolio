@@ -14,7 +14,7 @@ export default function Login() {
 
   return (
     <>
-      <Title title={'Iniciar Sesión'} />
+      <Title title={'Log in'} />
       <Form
         className={cs(
           "w-100 mb-5 mx-auto p-5 shadow-lg rounded-lg bg-white",
@@ -22,19 +22,19 @@ export default function Login() {
         )}
         onSubmit={handleSubmit}
       >
-         <h3 className="mb-3">Inicia Sesión</h3>
+         <h3 className="mb-3">Log in</h3>
         <Form.Group controlId="email">
-          <Form.Label className="text-muted">Correo electrónico</Form.Label>
+          <Form.Label className="text-muted">E-mail</Form.Label>
           <Form.Control type="email" name="email" required />
         </Form.Group>
 
         <Form.Group controlId="password">
-          <Form.Label className="text-muted mt-2">Contraseña</Form.Label>
+          <Form.Label className="text-muted mt-2">Password</Form.Label>
           <Form.Control type="password" name="password" required />
         </Form.Group>
         <div className='d-grid gap-2 mt-3'>
           <Button variant="success" type="submit" size='lg' disabled={isLoading} >
-            {isLoading ? "Comprobando..." : "Iniciar sesión"}
+            {isLoading ? "Checking..." : "Log in"}
           </Button>        
         </div>
       </Form>

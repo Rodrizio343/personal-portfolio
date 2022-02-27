@@ -1,8 +1,8 @@
 const link = (path, text) => ({ path, text });
 const links = [
-  link("/", "Sobre mí"),
-  link("/proyectos", "proyectos"),
-  link("/habilidades", "habilidades"),
-  link("/contacto", "Contacto"),
+  link("/", "About me"),
+  link("/proyectos", "projects"),
+  link("/habilidades", "skills"),
+  link("/contacto", "Contact"),
 ];
 export default links;

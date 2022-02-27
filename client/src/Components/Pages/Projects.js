@@ -15,16 +15,16 @@ export default function Projects() {
   
   return (
     <>
-      <Title title="Proyectos" />
-      <h1 className="mt-5 mb-4 font-weight-bold">Proyectos</h1>
+      <Title title="Projects" />
+      <h1 className="mt-5 mb-4 font-weight-bold">Projects</h1>
       <p>
-        Una recopilación de proyectos personales y grupales utilizando
-        tecnologías web, mayormente frameworks/librerías enfocadas a javascript:
+        A compilation of personal and group projects using
+        web tecnologies, mainly frameworks/libraries focused on javascript:
       </p>
       {user._id && (
         <>
           <Button variant="success" className="mb-3" onClick={toggleVisible}>
-            Agregar proyecto
+            New project
           </Button>
           <CreateProjectModal
             show={isVisible}
