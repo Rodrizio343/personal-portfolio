@@ -30,9 +30,9 @@ export default function CreateProjectModal({ setProjects, ...args }) {
       try {
         const newProject = await mutation.mutateAsync(fd);
         setProjects((projects) => [newProject, ...projects]);
-        toast.success("Proyecto creado");
+        toast.success("Project created");
       } catch (error) {
-        toast.error("Ocurrió un error al crear el proyecto");
+        toast.error("Error to create project");
         console.log(error);
       }
     });
@@ -40,29 +40,29 @@ export default function CreateProjectModal({ setProjects, ...args }) {
   return (
     <Modal {...args} backdrop="static" centered>
       <Modal.Header closeButton>
-        <Modal.Title>Nuevo proyecto</Modal.Title>
+        <Modal.Title>New project</Modal.Title>
       </Modal.Header>
       <Modal.Body>
         <Form validated={validated} onSubmit={handleSubmit} noValidate>
           <Form.Group controlId="title">
-            <Form.Label style={label}>Título</Form.Label>
+            <Form.Label style={label}>Title</Form.Label>
             <Form.Control
               size="sm"
               type="text"
               name="title"
-              placeholder="Título del proyecto"
+              placeholder="Project title"
               disabled={mutation.isLoading}
               required
             ></Form.Control>
           </Form.Group>
 
           <Form.Group controlId="description">
-            <Form.Label style={label}>Descripción</Form.Label>
+            <Form.Label style={label}>Description</Form.Label>
             <Form.Control
               size="sm"
               as="textarea"
               name="description"
-              placeholder="Descripción del proyecto"
+              placeholder="Project description"
               disabled={mutation.isLoading}
               required
             ></Form.Control>
@@ -70,7 +70,7 @@ export default function CreateProjectModal({ setProjects, ...args }) {
 
           <Form.Group>
             <Form.Label style={label} htmlFor="image">
-              Elegir imágen del proyecto
+              Choose project picture
             </Form.Label>
             <input
               accept="image/*"
@@ -85,12 +85,12 @@ export default function CreateProjectModal({ setProjects, ...args }) {
           <Form.Row>
             <Col>
               <Form.Group controlId="github">
-                <Form.Label style={label}>Link de github</Form.Label>
+                <Form.Label style={label}>GitHub link</Form.Label>
                 <Form.Control
                   size="sm"
                   type="url"
                   name="github"
-                  placeholder="Github del proyecto"
+                  placeholder="Project GitHub"
                   disabled={mutation.isLoading}
                 ></Form.Control>
               </Form.Group>
@@ -98,12 +98,12 @@ export default function CreateProjectModal({ setProjects, ...args }) {
 
             <Col>
               <Form.Group controlId="link">
-                <Form.Label style={label}>Link del demo</Form.Label>
+                <Form.Label style={label}>Demo link</Form.Label>
                 <Form.Control
                   size="sm"
                   type="url"
                   name="link"
-                  placeholder="Link del proyecto"
+                  placeholder="Project demo"
                   disabled={mutation.isLoading}
                 ></Form.Control>
               </Form.Group>
@@ -111,12 +111,12 @@ export default function CreateProjectModal({ setProjects, ...args }) {
           </Form.Row>
 
           <Form.Group controlId="technologies">
-            <Form.Label style={label}>Tecnologías</Form.Label>
+            <Form.Label style={label}>Technologies</Form.Label>
             <Form.Control
               size="sm"
               as="select"
               name="technologies"
-              placeholder="Tecnologías del proyecto"
+              placeholder="Project technologies"
               style={{ height: "150px" }}
               disabled={mutation.isLoading}
               required
@@ -136,7 +136,7 @@ export default function CreateProjectModal({ setProjects, ...args }) {
             disabled={mutation.isLoading}
             block
           >
-            {mutation.isLoading ? "Creando proyecto..." : "Crear proyecto"}
+            {mutation.isLoading ? "Creating project..." : "Create project"}
           </Button>
         </Form>
       </Modal.Body>

@@ -48,9 +48,9 @@ export default function UpdateProjectModal({
           copy[index] = editedValues;
           return copy;
         });
-        toast.success("Proyecto editado");
+        toast.success("Project updated");
       } catch (error) {
-        toast.error("Ocurrió un error al actualizar el proyecto");
+        toast.error("Error to update project");
         console.log(error);
       }
     });
@@ -63,7 +63,7 @@ export default function UpdateProjectModal({
       centered
     >
       <Modal.Header closeButton>
-        <Modal.Title>Editar Proyecto</Modal.Title>
+        <Modal.Title>Update project</Modal.Title>
       </Modal.Header>
 
       <Modal.Body>
@@ -74,7 +74,7 @@ export default function UpdateProjectModal({
               size="sm"
               type="text"
               name="title"
-              placeholder="Título del proyecto"
+              placeholder="Project title"
               defaultValue={title}
               disabled={mutation.isLoading}
               required
@@ -82,12 +82,12 @@ export default function UpdateProjectModal({
           </Form.Group>
 
           <Form.Group controlId="description">
-            <Form.Label style={label}>Descripción</Form.Label>
+            <Form.Label style={label}>Description</Form.Label>
             <Form.Control
               size="sm"
               as="textarea"
               name="description"
-              placeholder="Descripción del proyecto"
+              placeholder="Project description"
               defaultValue={description}
               disabled={mutation.isLoading}
               required
@@ -96,7 +96,7 @@ export default function UpdateProjectModal({
 
           <Form.Group>
             <Form.Label style={label} htmlFor="image">
-              Elegir imágen del proyecto
+              Choose project picture
             </Form.Label>
             <input
               accept="image/*"
@@ -111,12 +111,12 @@ export default function UpdateProjectModal({
           <Form.Row>
             <Col>
               <Form.Group controlId="github">
-                <Form.Label style={label}>Link de github</Form.Label>
+                <Form.Label style={label}>GitHub link</Form.Label>
                 <Form.Control
                   size="sm"
                   type="url"
                   name="github"
-                  placeholder="Github del proyecto"
+                  placeholder="Project GitHub"
                   defaultValue={github}
                   disabled={mutation.isLoading}
                   required
@@ -126,12 +126,12 @@ export default function UpdateProjectModal({
 
             <Col>
               <Form.Group controlId="link">
-                <Form.Label style={label}>Link del demo</Form.Label>
+                <Form.Label style={label}>Demo link</Form.Label>
                 <Form.Control
                   size="sm"
                   type="url"
                   name="link"
-                  placeholder="Link del proyecto"
+                  placeholder="Project demo"
                   defaultValue={link}
                   disabled={mutation.isLoading}
                   required
@@ -141,12 +141,12 @@ export default function UpdateProjectModal({
           </Form.Row>
 
           <Form.Group controlId="technologies">
-            <Form.Label style={label}>Tecnologías</Form.Label>
+            <Form.Label style={label}>Technologies</Form.Label>
             <Form.Control
               size="sm"
               as="select"
               name="technologies"
-              placeholder="Tecnologías del proyecto"
+              placeholder="Project technologies"
               style={{ height: "150px" }}
               disabled={mutation.isLoading}
               onChange={onChange}
@@ -169,8 +169,8 @@ export default function UpdateProjectModal({
             block
           >
             {mutation.isLoading
-              ? "Actualizando proyecto..."
-              : "Actualizar proyecto"}
+              ? "Updating project..."
+              : "Update project"}
           </Button>
         </Form>
       </Modal.Body>

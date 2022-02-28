@@ -17,16 +17,16 @@ export default function useLogin() {
     try {
       const data = await mutation.mutateAsync(formData);
       if (data.isValid) {
-        toast.success("Inicio de sesión correcto!");
+        toast.success("Succesful log in!");
         setUser(data.user);
         setToken(data.user.token);
         push("/");
         return;
       }
-      toast.error("La cuenta es inválida, vuelva a intentarlo");
+      toast.error("This account is invalid, try again");
       console.log(data);
     } catch (err) {
-      toast.error("Ocurrió un error al conectarse");
+      toast.error("Failed to connect");
       console.log(err);
     }
   };

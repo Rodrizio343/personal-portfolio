@@ -38,12 +38,12 @@ export async function sendForm(data) {
     );
 
     if (emailForMe.status === 200) {
-      toast.success("Formulario enviado");
+      toast.success("Message sent");
     } else {
-      toast.error("Ocurrió un error al enviar, estado: " + emailForMe.status);
+      toast.error("Error to send, status: " + emailForMe.status);
     }
   } catch (error) {
-    toast.error("Ocurrió un error al enviar el formulario");
+    toast.error("Error to send message");
     console.log(error);
   }
 }

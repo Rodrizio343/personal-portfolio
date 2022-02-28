@@ -18,13 +18,13 @@ export default function DeleteProjectModal({
     try {
       await mutation.mutateAsync(id);
       toggleDeleteModal();
-      toast.success("Proyecto eliminado");
+      toast.success("Project deleted");
       setProjects((projects) => {
         const projectsFilter = projects.filter((project) => project._id !== id);
         return projectsFilter;
       });
     } catch {
-      toast.error("Ocurrió un error al eliminar el proyecto");
+      toast.error("Error to delete project");
     }
   };
 
@@ -36,15 +36,14 @@ export default function DeleteProjectModal({
       centered
     >
       <Modal.Header closeButton>
-        <Modal.Title>Eliminar Proyecto</Modal.Title>
+        <Modal.Title>Delete project</Modal.Title>
       </Modal.Header>
       <Modal.Body>
         <p className="mb-3">
           <small>
-            El proyecto <strong>{title}</strong> se eliminará y esta acción no
-            es reversible.
+            The project <strong>{title}</strong> will be deleted and this action is not reversible.
             <br />
-            ¿Seguro de eliminar este proyecto?
+            ¿Are you sure to delete this project?
           </small>
         </p>
 
@@ -54,7 +53,7 @@ export default function DeleteProjectModal({
           disabled={mutation.isLoading}
           block
         >
-          {mutation.isLoading ? "Eliminando..." : "Si, de acuerdo"}
+          {mutation.isLoading ? "Deleting..." : "Yes, i'm sure."}
         </Button>
       </Modal.Body>
     </Modal>
