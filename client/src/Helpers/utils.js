@@ -1,12 +1,21 @@
 import emailjs from "emailjs-com";
 import { toast } from "react-toastify";
 import { EMAILJS } from "../Config/config";
+import Compressor from 'compressorjs';
 
 export function blobToUrl(blob, cb) {
   if (!blob) return cb(null);
-  const fr = new FileReader();
-  fr.onload = () => cb(fr.result);
-  fr.readAsDataURL(blob);
+  new Compressor(blob, {
+    quality: 0.2,
+    success(result) {
+      const fr = new FileReader();
+      fr.onload = () => cb(fr.result);
+      fr.readAsDataURL(result);
+    },
+    error(err) {
+      console.log(err.message);
+    },
+  });
 }
 
 export const route = (

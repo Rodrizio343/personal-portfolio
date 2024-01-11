@@ -24,8 +24,9 @@ export default function Home() {
       <Col md={12} lg={6}>
         <Image
           src={placeholder}
-          className="rounded-circle d-block mx-auto mx-md-0 mx-lg-0"
+          className="d-block mx-auto mx-md-0 mx-lg-0"
           fluid
+          style={{borderRadius: "1rem", maxHeight: 470}}
         />
       </Col>
     </Row>
