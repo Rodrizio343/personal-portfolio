@@ -8,6 +8,8 @@ const PROJECTS = `${API_URL}/project`;
 const WEB_TECHNOLOGIES = [
   "ReactJS",
   "NextJS",
+  "Redux",
+  "Storybook",
   "NodeJS",
   "HTML5",
   "CSS3",

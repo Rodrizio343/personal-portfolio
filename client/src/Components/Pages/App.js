@@ -1,7 +1,7 @@
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import Image from "react-bootstrap/Image";
-import placeholder from "../../Images/rmartinez.jpg";
+import placeholder from "../../Images/rmartinez.webp";
 import TextMagic from "../TextMagic";
 import Title from "../Titlte";
 
@@ -24,9 +24,9 @@ export default function Home() {
       <Col md={12} lg={6}>
         <Image
           src={placeholder}
-          className="d-block mx-auto mx-md-0 mx-lg-0"
+          className="d-block mx-auto mx-md-0 mx-lg-0 shadow"
           fluid
-          style={{borderRadius: "1rem", maxHeight: 470}}
+          style={{borderRadius: "20% 10%", maxHeight: 470}}
         />
       </Col>
     </Row>
