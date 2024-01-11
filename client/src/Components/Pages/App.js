@@ -14,8 +14,7 @@ export default function Home() {
           Rodrigo E. Martínez
         </h1>
         <p className="">
-          I'm a web developer on
-          <TextMagic text="ReactJS" />, <TextMagic text="ExpressJS" /> and <TextMagic text="Lumen" />, in constant study and integral growth in the laboral scene. <br /> I'm ready to work on groupal projects, where colaborative work and comunication are crucial.
+          Dedicated Software Developer with 3 years of experience in developing and maintaining web applications. Proficient in <TextMagic text="React"/>, <TextMagic text="TypeScript"/>, and <TextMagic text="NodeJS"/>. Strong advocate for clean and efficient code. Excited about working with a dynamic team to drive innovation and deliver exceptional user experiences.
         </p>
 
         {/* <blockquote>

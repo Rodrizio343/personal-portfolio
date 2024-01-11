@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "My personal portfolio to show my projects",
   "main": "index.js",
+  "engines" : { 
+    "node" : "20.8.0"
+  },
   "scripts": {
     "dev": "nodemon index",
     "start": "node index"

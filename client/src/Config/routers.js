@@ -10,12 +10,12 @@ const resetCss = "justify-content-start align-items-start";
 const routers = [
   route("/", { component: App }),
   route("/login", { component: Login, redirect: true, layout: false }),
-  route("/contacto", { component: Contact }),
-  route("/proyectos", {
+  route("/contact", { component: Contact }),
+  route("/projects", {
     component: Projects,
     layoutClassName: resetCss,
   }),
-  route("/habilidades", {
+  route("/tech-stack", {
     component: Skills,
     layoutClassName: resetCss,
   }),

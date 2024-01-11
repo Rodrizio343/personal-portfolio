@@ -12,6 +12,7 @@ import css from "../Styles/App.module.scss";
 import cs from "classnames";
 import { useUserContext } from "../Context/UserContext";
 import SocialLink from "./SocialLink";
+import { Button } from "react-bootstrap";
 
 function Navbar() {
   const [isOpen, setOpen] = useState(false);
@@ -50,6 +51,9 @@ function Navbar() {
             text={<FiLinkedin />}
             title="Mi perfil de linkedin"
           />
+          <a href="/Resume_Rodrigo_Martinez_dev_ir.pdf" download="Resume_Rodrigo_Martinez_dev_ir" target='_blank'>
+            <Button variant="outline-light">CV</Button>
+          </a>
         </div>
       </nav>
     </>
