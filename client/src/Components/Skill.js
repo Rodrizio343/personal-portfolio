@@ -9,6 +9,7 @@ export default function Skill({ title, image, text, desc }) {
         className="rounded-lg"
         style={{ maxHeight: "100px" }}
         fluid
+        loading="lazy"
       />
       <h4 className="mt-3">{title}</h4>
       <p style={{ fontSize: "15px" }}>{desc}</p>
