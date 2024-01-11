@@ -3,8 +3,8 @@
   "author": "Rodrigo E. Martínez",
   "version": "0.1.0",
   "private": true,
-  "engines" : { 
-    "node" : "20.8.0"
+  "engines": { 
+    "node": "18.x" 
   },
   "dependencies": {
     "axios": "^0.25.0",
