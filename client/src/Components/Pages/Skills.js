@@ -1,13 +1,14 @@
-import html from "../../Images/html.png";
-import css from "../../Images/css.jpg";
-import sass from "../../Images/sass.jpg";
+import redux from "../../Images/redux.png";
+import typescrypt from "../../Images/typescript.png";
+import storybook from "../../Images/storybook.png";
 import node from "../../Images/node.svg";
 import react from "../../Images/react.png";
 import express from "../../Images/express.png";
 import mongodb from "../../Images/mongodb.png";
 import nextjs from "../../Images/nextjs.png";
+import jest from "../../Images/jest.png";
 import graphql from "../../Images/graphql.png";
-import lumen from "../../Images/lumen.png";
+import styledComponents from "../../Images/styled-components.png";
 import Skill from "../Skill";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
@@ -16,14 +17,30 @@ import Title from "../Titlte";
 export default function Skills() {
   return (
     <>
-      <Title title="Skills" />
-      <h1 className="mt-5 mb-4 font-weight-bold">Skills</h1>
+      <Title title="Tech Stack" />
+      <h1 className="mt-5 mb-4 font-weight-bold">Tech Stack</h1>
       <Row className="align-items-center">
         <Col lg={4}>
           <Skill
             title="React"
             image={react}
-            desc="Lubrary for building user interfaces that can be used in the development of SPA, interactive and dynamically."
+            desc="Library for building user interfaces that can be used in the development of SPA, interactive and dynamically."
+          />
+        </Col>
+
+        <Col lg={4}>
+          <Skill
+            title="Redux"
+            image={redux}
+            desc="JavaScript library for managing and centralizing application state."
+          />
+        </Col>
+
+        <Col lg={4}>
+          <Skill
+            title="TypeScript"
+            image={typescrypt}
+            desc="TypeScript is a strongly typed programming language that builds on JavaScript."
           />
         </Col>
 
@@ -32,6 +49,30 @@ export default function Skills() {
             title="Next JS"
             image={nextjs}
             desc="React framework for building web applications with server-side rendering and static pages."
+          />
+        </Col>
+        
+        <Col lg={4}>
+          <Skill
+            title="Jest"
+            image={jest}
+            desc="Testing framework built on JavaScript, designed majorly to work with React."
+          />
+        </Col>
+
+        <Col lg={4}>
+          <Skill
+            title="Styled Components"
+            image={styledComponents}
+            desc="Library that allows you to write CSS in JS while building custom components in React JS."
+          />
+        </Col>
+
+        <Col lg={4}>
+          <Skill
+            title="Storybook"
+            image={storybook}
+            desc="Frontend workshop for building UI components and pages in isolation."
           />
         </Col>
 
@@ -47,7 +88,7 @@ export default function Skills() {
           <Skill
             title="Express"
             image={express}
-            desc="Framerowk for building backen applications and APIs with Node JS"
+            desc="Framework for building backend applications and APIs with Node JS"
           />
         </Col>
 
@@ -59,6 +100,7 @@ export default function Skills() {
           />
         </Col>
 
+       
         <Col lg={4}>
           <Skill
             title="GraphQL"
@@ -67,37 +109,6 @@ export default function Skills() {
           />
         </Col>
 
-        <Col lg={4}>
-          <Skill
-            title="Lumen"
-            image={lumen}
-            desc="PHP's micro-framework for building web applications, APIs and microservices."
-          />
-        </Col>
-
-        <Col lg={4}>
-          <Skill
-            title="SASS"
-            image={sass}
-            desc="Preposcessor scripting language for developing CSS more easy, flexible and in a programmatic way."
-          />
-        </Col>
-
-        <Col lg={4}>
-          <Skill
-            title="CSS"
-            image={css}
-            desc="Style sheet language used to describe how HTML documents shoruld be displayed, adding styles. It is complemtary with SASS."
-          />
-        </Col>
-
-        <Col lg={4}>
-          <Skill
-            title="HTML"
-            image={html}
-            desc="Markup language for building the basic structure of web pages in colaboration with CSS and JavaScript"
-          />
-        </Col>
       </Row>
     </>
   );

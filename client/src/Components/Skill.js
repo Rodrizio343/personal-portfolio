@@ -7,7 +7,7 @@ export default function Skill({ title, image, text, desc }) {
       <Img
         src={image}
         className="rounded-lg"
-        style={{ maxHeight: "170px" }}
+        style={{ maxHeight: "100px" }}
         fluid
       />
       <h4 className="mt-3">{title}</h4>
